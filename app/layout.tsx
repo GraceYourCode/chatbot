@@ -18,7 +18,7 @@ export const metadata = {
   },
   description: 'An AI-powered chatbot template built with Next.js and Vercel.',
   icons: {
-    icon: '/favicon.ico',
+    icon: '/artificial-intelligence.png',
     shortcut: '/favicon-16x16.png',
     apple: '/apple-touch-icon.png'
   }
@@ -56,7 +56,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <Header />
             <main className="flex flex-col flex-1 bg-muted/50">{children}</main>
           </div>
-          <TailwindIndicator />
         </Providers>
       </body>
     </html>

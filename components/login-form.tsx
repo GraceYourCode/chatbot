@@ -9,7 +9,7 @@ import { IconSpinner } from './ui/icons'
 import { getMessageFromCode } from '@/lib/utils'
 import { useRouter } from 'next/navigation'
 
-export default function LoginForm() {
+const LoginForm = () => {
   const router = useRouter()
   const [result, dispatch] = useFormState(authenticate, undefined)
 
@@ -83,7 +83,7 @@ export default function LoginForm() {
   )
 }
 
-function LoginButton() {
+const LoginButton = () => {
   const { pending } = useFormStatus()
 
   return (
@@ -95,3 +95,5 @@ function LoginButton() {
     </button>
   )
 }
+
+export default LoginForm
